@@ -1,22 +1,25 @@
 // - створити функцію яка обчислює та повертає площу прямокутника висотою
 function Spramokut(a,b){
-    console.log("Площа прямокутник = : " + a * b +"m^2")
+    let res = a * b;
+    return res
 }
-Spramokut(4,2)
+let result1 = Spramokut(4,2)
+console.log("Площа прямокутника : " + result1) 
 // - створити функцію яка обчислює та повертає площу кола
 function Skola(radius){
-    
-    s = Math.PI * Math.pow(radius,2)
-    console.log("Площа кола = : " + s + "m^2")
+    let res = Math.PI * Math.pow(radius,2)
+    return res
 }
-Skola(7)
+let result2 = Skola(7)
+console.log("Площа кола = : " + result2 + "m^2")
 // - створити функцію яка обчислює та повертає площу циліндру
 function Scilindr(radius,visota){
+    let res = 2 * Math.PI * radius *(radius + visota)
+    return res
     
-    s = 2 * Math.PI * radius *(radius + visota)
-    console.log("Площа циліндра = : " + s +"m^2")
 }
-Scilindr(4,2)
+let result3 =  Scilindr(4,2)
+console.log("Площа циліндра = : " + result3 +"m^2")
 // - створити функцію яка приймає масив та виводить кожен його елемент
 arr = [1,2,3,4,5]
 function showMass(mass){

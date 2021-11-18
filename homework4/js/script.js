@@ -1,36 +1,36 @@
 // - створити функцію яка обчислює та повертає площу прямокутника висотою
 function Spramokut(a,b){
     let res = a * b;
-    return res
+    return res;
 }
-let result1 = Spramokut(4,2)
-console.log("Площа прямокутника : " + result1) 
+let result1 = Spramokut(4,2);
+console.log("Площа прямокутника : " + result1) ;
 // - створити функцію яка обчислює та повертає площу кола
 function Skola(radius){
-    let res = Math.PI * Math.pow(radius,2)
-    return res
+    let res = Math.PI * Math.pow(radius,2);
+    return res;
 }
-let result2 = Skola(7)
-console.log("Площа кола = : " + result2 + "m^2")
+let result2 = Skola(7);
+console.log("Площа кола = : " + result2 + "m^2");
 // - створити функцію яка обчислює та повертає площу циліндру
 function Scilindr(radius,visota){
-    let res = 2 * Math.PI * radius *(radius + visota)
-    return res
+    let res = 2 * Math.PI * radius *(radius + visota);
+    return res;
     
 }
-let result3 =  Scilindr(4,2)
-console.log("Площа циліндра = : " + result3 +"m^2")
+let result3 =  Scilindr(4,2);
+console.log("Площа циліндра = : " + result3 +"m^2");
 // - створити функцію яка приймає масив та виводить кожен його елемент
 arr = [1,2,3,4,5]
 function showMass(mass){
     for(i = 0 ; i < mass.length;i++){
-        console.log(mass[i])
+        console.log(mass[i]);
     }
 }
-showMass(arr)
+showMass(arr);
 // - створити функцію яка створює параграф з текстом. Текст задати через аргумент
 function createP(txt){
-    document.write(`<div>${txt}</div>`)
+    document.write(`<div>${txt}</div>`);
 }
 createP("hello world")
 // - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий
@@ -39,9 +39,9 @@ function createUl(txt){
         <li>${txt}</li>
         <li>${txt}</li>
         <li>${txt}</li>
-    </ul>`)
+    </ul>`);
 }
-createUl("kotsik")
+createUl("kotsik");
 // - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий. 
 // Кількість li визначається другим аргументом, який є числовим (тут використовувати цикл)
 function createUlNumbered(txt,num){
@@ -51,9 +51,9 @@ function createUlNumbered(txt,num){
         document.write(`<li>${txt}</li>`)
         i++
     }
-    document.write(`</ul>`)
+    document.write(`</ul>`);
 }
-createUlNumbered("Nazar",10)
+createUlNumbered("Nazar",10);
 // - створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список
 function sortElem(mass){
 
@@ -64,27 +64,27 @@ function sortElem(neponyatnocho){
     document.write(`<ul> Number`)
     for(i = 0 ; i <neponyatnocho.length;i++){
         if(typeof(neponyatnocho[i])==='number'){
-            document.write(`<li>${neponyatnocho[i]} <br> index : = ${i}</li>`) 
+            document.write(`<li>${neponyatnocho[i]} <br> index : = ${i}</li>`) ;
         }
     }
-    document.write(`</ul>`)
+    document.write(`</ul>`);
     document.write(`<ul> String`)
     for(i = 0 ; i <neponyatnocho.length;i++){
         if(typeof(neponyatnocho[i])==='string'){
-            document.write(`<li>${neponyatnocho[i]} <br> index : = ${i} </li>`) 
+            document.write(`<li>${neponyatnocho[i]} <br> index : = ${i} </li>`) ;
         }
     }
-    document.write(`</ul>`)
+    document.write(`</ul>`);
     document.write(`<ul> Boolean`)
     for(i = 0 ; i <neponyatnocho.length;i++){
         if(typeof(neponyatnocho[i])==='boolean'){
-            document.write(`<li>${neponyatnocho[i]} <br> index : = ${i}</li>`) 
+            document.write(`<li>${neponyatnocho[i]} <br> index : = ${i}</li>`) ;
         }
     }
-    document.write(`</ul>`)
+    document.write(`</ul>`);
 
 }
-sortElem(kakoytomass)
+sortElem(kakoytomass);
 // - створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ. Для кожного об'єкту окремий блок.
 people = [
     {
@@ -113,8 +113,8 @@ function listObj(data){
         <p>Name : ${data[i].name}</p>
         <p>Age : ${data[i].age}</p>
         <p>Id : ${data[i].id}</p>
-        </div>`)
+        </div>`);
     }
 }
-listObj(people)
+listObj(people);
 // - створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ. Для кожного об'єкту окремий блок.

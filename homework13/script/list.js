@@ -22,7 +22,7 @@ for (const tovar of tovars){
     price.innerText = `Price : ${tovar.price}`
     let item = 'tovar'
 
-    btnDelTovar.onclick = () => {
+    btnDelTovar.onclick = function () {
         let id = this.id
         let newArr = []
         for(let i = 0;i< tovars.length;i++){

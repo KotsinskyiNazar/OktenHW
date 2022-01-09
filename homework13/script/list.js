@@ -20,23 +20,20 @@ for (const tovar of tovars){
     name.innerText = `Name of tovar : ${tovar.name}`
     number.innerText = `Number of tovar : ${tovar.number}`
     price.innerText = `Price : ${tovar.price}`
-    let item = 'tovar'
+ 
 
     btnDelTovar.onclick = function () {
         let id = this.id
-        let newArr = []
         for(let i = 0;i< tovars.length;i++){
-            if(id != tovars[i].name){
-                // console.log(tovars[i])
-                newArr.push(tovars[i])
-                // console.log(newArr)
-                localStorage.setItem(item, JSON.stringify(newArr));
+            if(id === tovars[i].name){
+                tovars.splice(i,1);
+                localStorage["tovar"] = JSON.stringify(tovars)
+                let x = document.getElementById(id)
+                x.style = 'display:none'
             }
-            
-        }
         console.log(id)
-        // localStorage.removeItem(`tovar`)
     }
+}
 let tovar2 = localStorage.getItem('tovar')
 console.log(tovar2)
    
